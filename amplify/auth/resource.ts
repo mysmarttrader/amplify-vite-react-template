@@ -7,16 +7,8 @@ import { defineAuth } from '@aws-amplify/backend';
 export const auth = defineAuth({
   loginWith: {
     email: true,
-    federation: {
-      google: {
-        clientId: 'YOUR_GOOGLE_CLIENT_ID',
-      },
-      facebook: {
-        appId: 'YOUR_FACEBOOK_APP_ID',
-      },
+    federated: {
+      providers: ['Google', 'Facebook'], // Add Google and Facebook as providers
     },
-  }
-  
+  },
 });
-
-
