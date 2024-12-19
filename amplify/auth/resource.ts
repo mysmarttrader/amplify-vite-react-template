@@ -15,22 +15,8 @@ export const auth = defineAuth({
         appId: 'YOUR_FACEBOOK_APP_ID',
       },
     },
-  },
-  signupAttributes: [
-    'email',
-    'name',
-    'preferred_username',
-    'phone_number',
-    'birthdate',
-    'custom:address',
-    'custom:gender',
-  ],
-  passwordPolicy: {
-    minLength: 8,
-    requireUppercase: true,
-    requireNumbers: true,
-    requireSymbols: false,
-  },
+  }
+  
 });
 
 
